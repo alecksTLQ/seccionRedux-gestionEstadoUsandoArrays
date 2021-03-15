@@ -1,8 +1,7 @@
 import React from 'react'
 import {Provider} from 'react-redux'
-import store from './redux/store'
+import store from './store'
 import Counter from './components/counter'
-import Info from './components/info'
 
 /*
   Store: almacenamiento de nuestro estado
@@ -23,7 +22,6 @@ const App =()=>{
       <div>
         <Header/>
         <Counter></Counter>
-        <Info></Info>
       </div>
     </Provider>
   )
