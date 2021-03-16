@@ -13,12 +13,10 @@ const Counter =(props)=>{
             <button onClick={props.decrement}>
                 -
             </button>
-            <button onClick={props.updatenombre}>
-                cambiar nombre
-            </button>
+            
             <h1> {props.contador} </h1>
             <p>
-                {props.nombre}
+                {props.user.name}
             </p>
         </div>
     )
@@ -30,7 +28,7 @@ const Counter =(props)=>{
 const mapStateToProps=(state)=>{
     return {
         contador: state.counter,
-        nombre: state.user.name
+        user: state.user
     }
 }
 //permite acceder a los metodos del store

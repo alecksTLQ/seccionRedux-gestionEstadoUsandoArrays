@@ -1,7 +1,10 @@
 export const UPDATENOMBRE = 'UPDATENOMBRE'
 
-export const updatenombre=()=>{
+export const updatenombre=(nombre)=>{
     return{
-        type: UPDATENOMBRE
+        type: UPDATENOMBRE,
+        payload: {
+            name: nombre
+        }
     }
 }
